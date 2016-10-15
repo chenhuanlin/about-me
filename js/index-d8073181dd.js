@@ -218,7 +218,7 @@
 	});
 	$('#iscrollerUl').on('swipeRight', function() {
 	    i--;
-	    if (i < 0) {
+	    if (i > 0) {
 	        i = 0;
 	        $('#iscrollerUl').css({
 	            left: -ulWidth * i

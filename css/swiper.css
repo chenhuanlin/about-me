@@ -72,8 +72,9 @@ a {
   text-align: left; }
 
 .textLeft span {
-  font: 16px/50px '黑体';
-  display: inline-block; }
+  font: 16px/20px '黑体';
+  display: inline-block;
+  color: #000; }
 
 /*#tiyan {*/
 /*position: relative;*/

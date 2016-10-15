@@ -216,25 +216,6 @@
 
 
 	});
-	$('#iscrollerUl').on('swipeRight', function() {
-	    i--;
-	    if (i < 0) {
-	        i = 0;
-	        $('#iscrollerUl').css({
-	            left: -ulWidth * i
-	        });
-
-	    } else {
-	        $('#iscrollerUl').css({
-	            left: -ulWidth * i
-	        });
-	    }
-	    $('#footer div').removeClass('hasColor');
-	    $('#footer div').eq(i).addClass('hasColor');
-	    console.log(i);
-
-
-	});
 
 
 

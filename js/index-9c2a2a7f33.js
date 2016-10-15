@@ -199,38 +199,17 @@
 
 	$('#iscrollerUl').on('swipeLeft', function() {
 	    i++;
-	    if (i > 4) {
-	        i = 4;
-	        $('#iscrollerUl').css({
-	            left: -ulWidth * i
-	        });
-
-	    } else {
-	        $('#iscrollerUl').css({
-	            left: -ulWidth * i
-	        });
-	    }
-	    $('#footer div').removeClass('hasColor');
-	    $('#footer div').eq(i).addClass('hasColor');
-	    console.log(i);
-
-
-	});
-	$('#iscrollerUl').on('swipeRight', function() {
-	    i--;
-	    if (i < 0) {
-	        i = 0;
-	        $('#iscrollerUl').css({
-	            left: -ulWidth * i
-	        });
-
-	    } else {
-	        $('#iscrollerUl').css({
-	            left: -ulWidth * i
-	        });
-	    }
-	    $('#footer div').removeClass('hasColor');
-	    $('#footer div').eq(i).addClass('hasColor');
+	    // if (i > 4) {
+	    //     // $con.animate({left:'-100px'},300);
+	    //     // $con.animate({left:'100px'},150);
+	    //     i = 4;
+	    // } else {
+	    //     $('#iscrollerUl').css({
+	    //         left: -ulWidth * i
+	    //     });
+	    // }
+	    // $('#footer div').removeClass('hasColor');
+	    // $('#footer div').eq(i).addClass('hasColor');
 	    console.log(i);
 
 
