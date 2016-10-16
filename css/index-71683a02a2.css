@@ -2990,8 +2990,7 @@ justify-content: center;
   background: #fff; }
 
 #iscrollerUl li {
-  flex: 1;
-  width: 100%; }
+  flex: 1; }
 
 #iscrollerUl .licon {
   border-bottom: 1px solid #ccc;
@@ -3013,7 +3012,7 @@ justify-content: center;
   text-align: left; }
 
 .textLeft span {
-  font: 16px/35px '黑体';
+  font: 16px/50px '黑体';
   display: inline-block;
   color: #000; }
 
