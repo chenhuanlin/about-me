@@ -89,8 +89,8 @@
 	    },
 	    onSlideChangeEnd: function(swiper1) {
 	        // swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-	        // console.log(swiper1.activeIndex);  //swiper 属性   当时下标
-	        $('.button').removeClass('hasColor');
+	        console.log(swiper1.activeIndex);
+	        $('.button').removeClass();
 	        $('.button').eq(swiper1.activeIndex).addClass('hasColor');
 	    }
 	});
@@ -98,7 +98,7 @@
 	$('.button').tap(function() {
 	    var i = $(this).index();
 	    swiper1.slideTo(i, 1000, false); //切换到第一个slide，速度为1秒
-	    $('.button').removeClass('hasColor');
+	    $('.button').removeClass();
 	    $('.button').eq(i).addClass('hasColor');
 	})
 

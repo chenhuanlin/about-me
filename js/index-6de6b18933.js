@@ -89,18 +89,11 @@
 	    },
 	    onSlideChangeEnd: function(swiper1) {
 	        // swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-	        // console.log(swiper1.activeIndex);  //swiper 属性   当时下标
-	        $('.button').removeClass('hasColor');
-	        $('.button').eq(swiper1.activeIndex).addClass('hasColor');
+	        console.log(swiper1.activeIndex);
 	    }
 	});
 
-	$('.button').tap(function() {
-	    var i = $(this).index();
-	    swiper1.slideTo(i, 1000, false); //切换到第一个slide，速度为1秒
-	    $('.button').removeClass('hasColor');
-	    $('.button').eq(i).addClass('hasColor');
-	})
+
 
 
 
@@ -169,63 +162,63 @@
 	//     $('#iscrollerUl').css({
 	//         left: -ulWidth * i
 	//     });
-	// 需要进行post请求，然后请求/api/skill,并且将数据列表显示在页面上
-	// if (job == 'like') {
-	//     $.post('/api/' + job, {}, function(response) {
-	//         var html = '';
-	//         for (var i = 0; i < response.length; i++) {
-	//             html += '<li>' + response[i].name + '</li>';
-	//         }
-	//         $('#iscrollerLi4').html(html);
-	//         // console.log($('#scrollerLi4'));
-	//         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
-	//         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-	//     })
-	// } else if (job == 'project') {
-	//     $.post('/api/' + job, {}, function(response) {
-	//         var html = '';
-	//         for (var i = 0; i < response.length; i++) {
-	//             html += '<li>' + response[i].name + '</li>';
-	//         }
-	//         $('#iscrollerLi2').html(html);
-	//         // console.log(response);
-	//         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
-	//         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-	//     })
-	// } else if (job == 'skill') {
-	//     $.post('/api/' + job, {}, function(response) {
-	//         var html = '';
-	//         for (var i = 0; i < response.length; i++) {
-	//             html += '<li>' + response[i].name + '</li>';
-	//         }
-	//         $('#iscrollerLi1').html(html);
-	//         // console.log(response);
-	//         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
-	//         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-	//     })
-	// } else if (job == 'work') {
-	//     $.post('/api/' + job, {}, function(response) {
-	//         var html = '';
-	//         for (var i = 0; i < response.length; i++) {
-	//             html += '<li>' + response[i].name + '</li>';
-	//         }
-	//         $('#iscrollerLi3').html(html);
-	//         // console.log(response);
-	//         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
-	//         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-	//     })
-	// } else if (job == 'user') {
-	//     $.post('/api/' + job, {}, function(response) {
-	//         var html = '';
-	//         for (var i = 0; i < response.length; i++) {
-	//             html += '<li>' + response[i].name + '</li>';
-	//         }
-	//         $('#iscrollerLi5').html(html);
-	//         // console.log(response);
-	//         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
-	//         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
-	//     })
-	// }
+	    // 需要进行post请求，然后请求/api/skill,并且将数据列表显示在页面上
+	    // if (job == 'like') {
+	    //     $.post('/api/' + job, {}, function(response) {
+	    //         var html = '';
+	    //         for (var i = 0; i < response.length; i++) {
+	    //             html += '<li>' + response[i].name + '</li>';
+	    //         }
+	    //         $('#iscrollerLi4').html(html);
+	    //         // console.log($('#scrollerLi4'));
+	    //         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	    //         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+	    //     })
+	    // } else if (job == 'project') {
+	    //     $.post('/api/' + job, {}, function(response) {
+	    //         var html = '';
+	    //         for (var i = 0; i < response.length; i++) {
+	    //             html += '<li>' + response[i].name + '</li>';
+	    //         }
+	    //         $('#iscrollerLi2').html(html);
+	    //         // console.log(response);
+	    //         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	    //         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+	    //     })
+	    // } else if (job == 'skill') {
+	    //     $.post('/api/' + job, {}, function(response) {
+	    //         var html = '';
+	    //         for (var i = 0; i < response.length; i++) {
+	    //             html += '<li>' + response[i].name + '</li>';
+	    //         }
+	    //         $('#iscrollerLi1').html(html);
+	    //         // console.log(response);
+	    //         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	    //         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+	    //     })
+	    // } else if (job == 'work') {
+	    //     $.post('/api/' + job, {}, function(response) {
+	    //         var html = '';
+	    //         for (var i = 0; i < response.length; i++) {
+	    //             html += '<li>' + response[i].name + '</li>';
+	    //         }
+	    //         $('#iscrollerLi3').html(html);
+	    //         // console.log(response);
+	    //         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	    //         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+	    //     })
+	    // } else if (job == 'user') {
+	    //     $.post('/api/' + job, {}, function(response) {
+	    //         var html = '';
+	    //         for (var i = 0; i < response.length; i++) {
+	    //             html += '<li>' + response[i].name + '</li>';
+	    //         }
+	    //         $('#iscrollerLi5').html(html);
+	    //         // console.log(response);
+	    //         var myScroll = new IScroll('#wrapper', { mouseWheel: true });
+	    //         document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+	    //     })
+	    // }
 
 	// })
 
